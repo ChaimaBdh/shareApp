@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Share Application</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+
+	<script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/shareApp.js" defer="true"/></script>
+</head>
+
+<body>
+  <h1>Application de partage</h1>
+  <h2>Bienvenue</h2>
+
+  <div id="content">
+
+  </div>
+	<div id="user">
+    Utilisateur : <span id="userId"></span>
+    <button id="logout">Logout</button>
+  </div>
+
+  <div id="item-creation">
+    <input id="desc" type="text" placeholder="objet"/>
+    <button id="create">Ajouter</button>
+  </div>
+
+  <div id="available">
+		<p>Disponibles :</p>
+  </div>
+
+  <div id="borrowed">
+		<p>Inventaire :</p>
+    <span id="inventory"></span>
+    <p>Ils ont déjà emprunté :</p>
+    <span id="others-item"></span>
+  </div>
+
+</body>
+</html>

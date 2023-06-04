@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/login-register.css"/>
+
+  <script src="/javascripts/register.js" defer="true"/> </script>
+</head>
+
+<body>
+
+<div class="container">
+  <form autocomplete="off" id="register-form">
+
+    <h1 id="message">S'enregistrer</h1><small id="smallMessage"> </small>
+
+    <div class="field">
+      <label for="username">Nom</label>
+      <input type="text" placeholder="nom" value="" id="username"/>
+    </div>
+    <div class="field">
+      <label for="userlogin">Identifiant</label>
+        <input type="text" placeholder="login" value="" id="userlogin"/>
+    </div>
+
+    <div class="field">
+      <label for="userpassword">Mot de passe</label>
+      <input type="password" placeholder="mot de passe" value="" id="userpassword"/>
+      </div>
+
+    <button id="register">Register</button>
+
+    <div>
+      <a href="/access/login">vous avez déjà un compte ?</a>
+    </div>
+  </form>
+
+</div>
+
+<div id="problem"></div>
+</body>
+
+</html>
